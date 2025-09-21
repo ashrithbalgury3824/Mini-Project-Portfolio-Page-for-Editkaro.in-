@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="hero fullscreen-hero" id="fullscreen-hero">
+            <h1 class="brand">Editkaro.in</h1>
+            <p class="tagline">Social Media Marketing & Video Editing Agency</p>
+            <div class="scroll-down-indicator">▼</div>
+        </div>
+        <nav id="main-nav" class="hidden-nav">
+            <ul id="category-nav">
+                <!-- Categories will be injected here -->
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <div class="controls-section">
+            <input type="text" class="search-box" placeholder="Search videos..." id="search-input">
+            <select class="sort-dropdown" id="sort-select">
+                <option value="default">Sort by Default</option>
+                <option value="title">Sort by Title</option>
+                <option value="category">Sort by Category</option>
+            </select>
+        </div>
+        <div id="section-heading" class="section-heading hidden">
+            <h2 id="section-title">All Videos</h2>
+        </div>
+        <section id="portfolio">
+            <!-- Video cards will be injected here -->
+        </section>
+    </main>
+    <div id="lightbox" class="hidden">
+        <span id="close-lightbox">&times;</span>
+        <video id="lightbox-video" controls></video>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

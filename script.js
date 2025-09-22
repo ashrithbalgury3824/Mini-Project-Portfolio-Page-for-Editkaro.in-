@@ -1,46 +1,53 @@
-// Portfolio Data with preview videos
+// Portfolio Data with Cloudinary optimized videos
 const videos = [
     {
         title: "Short-Form Video 1",
         category: "Short-Form Videos",
-        src: "assets/videos/short1.mp4",
-        preview: "assets/videos/short1-preview.mp4"
+        src: "https://res.cloudinary.com/dm9op0ix7/video/upload/q_auto/short1_swrreb.mp4",
+        preview: "https://res.cloudinary.com/dm9op0ix7/video/upload/q_auto,w_600/short1-preview_fporos.mp4",
+        thumbnail: "https://res.cloudinary.com/dm9op0ix7/video/upload/so_0,w_400,h_300,c_fill/short1_swrreb.jpg"
     },
     {
         title: "Gaming Video 1",
         category: "Gaming Videos",
-        src: "assets/videos/gaming1.mp4",
-        preview: "assets/videos/gaming1-preview.mp4"
+        src: "https://res.cloudinary.com/dm9op0ix7/video/upload/q_auto/gaming1_bgrdko.mp4",
+        preview: "https://res.cloudinary.com/dm9op0ix7/video/upload/q_auto,w_600/gaming1-preview_lsimop.mp4",
+        thumbnail: "https://res.cloudinary.com/dm9op0ix7/video/upload/so_0,w_400,h_300,c_fill/gaming1_bgrdko.jpg"
     },
     {
         title: "Football Edit 1",
         category: "Football Edits",
-        src: "assets/videos/football1.mp4",
-        preview: "assets/videos/football1-preview.mp4"
+        src: "https://res.cloudinary.com/dm9op0ix7/video/upload/q_auto/football1_kvx6ss.mp4",
+        preview: "https://res.cloudinary.com/dm9op0ix7/video/upload/q_auto,w_600/football1-preview_lxtmgf.mp4",
+        thumbnail: "https://res.cloudinary.com/dm9op0ix7/video/upload/so_0,w_400,h_300,c_fill/football1_kvx6ss.jpg"
     },
     {
         title: "eCommerce Ad 1",
         category: "eCommerce Ads",
-        src: "assets/videos/ecommerce1.mp4",
-        preview: "assets/videos/ecommerce1-preview.mp4"
+        src: "https://res.cloudinary.com/dm9op0ix7/video/upload/q_auto/ecommerce1_xlm7ki.mp4",
+        preview: "https://res.cloudinary.com/dm9op0ix7/video/upload/q_auto,w_600/ecommerce1-preview_lrzjpu.mp4",
+        thumbnail: "https://res.cloudinary.com/dm9op0ix7/video/upload/so_0,w_400,h_300,c_fill/ecommerce1_xlm7ki.jpg"
     },
     {
         title: "Documentary Style 1",
         category: "Documentary Style",
-        src: "assets/videos/documentary1.mp4",
-        preview: "assets/videos/documentary1-preview.mp4"
+        src: "https://res.cloudinary.com/dm9op0ix7/video/upload/q_auto/documentary1_k3pu58.mp4",
+        preview: "https://res.cloudinary.com/dm9op0ix7/video/upload/q_auto,w_600/documentary1-preview_sdku3g.mp4",
+        thumbnail: "https://res.cloudinary.com/dm9op0ix7/video/upload/so_0,w_400,h_300,c_fill/documentary1_k3pu58.jpg"
     },
     {
         title: "Anime Video 1",
         category: "Anime Videos",
-        src: "assets/videos/anime1.mp4",
-        preview: "assets/videos/anime1-preview.mp4"
+        src: "https://res.cloudinary.com/dm9op0ix7/video/upload/q_auto/anime1_budauu.mp4",
+        preview: "https://res.cloudinary.com/dm9op0ix7/video/upload/q_auto,w_600/anime1-preview_gpubop.mp4",
+        thumbnail: "https://res.cloudinary.com/dm9op0ix7/video/upload/so_0,w_400,h_300,c_fill/anime1_budauu.jpg"
     },
     {
         title: "Ad 1",
         category: "Ads",
-        src: "assets/videos/ads1.mp4",
-        preview: "assets/videos/ads1-preview.mp4"
+        src: "https://res.cloudinary.com/dm9op0ix7/video/upload/q_auto/ads1_mwqvrt.mp4",
+        preview: "https://res.cloudinary.com/dm9op0ix7/video/upload/q_auto,w_600/ads1-preview_jiajks.mp4",
+        thumbnail: "https://res.cloudinary.com/dm9op0ix7/video/upload/so_0,w_400,h_300,c_fill/ads1_mwqvrt.jpg"
     }
 ];
 

@@ -28,6 +28,7 @@ header {
     transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
                 opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     will-change: transform, opacity;
+    padding: 1rem;
 }
 .scroll-down-indicator {
     position: absolute;
@@ -39,6 +40,140 @@ header {
     opacity: 0.7;
     animation: bounce 1.5s infinite;
     pointer-events: none;
+}
+
+/* Email Collector */
+.email-collector {
+    margin-top: 2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.email-collector h3 {
+    color: #ffb300;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+#subscription-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#subscription-form input {
+    flex: 1;
+    min-width: 250px;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#subscription-form button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffb300;
+    color: #111;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#subscription-form button:hover {
+    background-color: #ffc233;
+}
+
+#subscription-message {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    height: 1.5rem;
+}
+
+.success-message {
+    color: #2ecc71;
+}
+
+.error-message {
+    color: #e74c3c;
+}
+
+/* Hero Links */
+.main-links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero-btn {
+    padding: 0.8rem 2rem;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #ffb300;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: #ffb300;
+    color: #111;
+}
+
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.brand-small {
+    color: #ffb300;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.page-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.page-links a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.page-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffb300;
+    transition: width 0.3s;
+}
+
+.page-links a:hover, .page-links a.active {
+    color: #ffb300;
+}
+
+.page-links a:hover::after, .page-links a.active::after {
+    width: 100%;
 }
 .brand {
     margin: 0;
@@ -310,26 +445,138 @@ nav li.active, nav li:hover {
 #close-lightbox:hover {
     color: #fff;
 }
+
+/* Footer Styles */
+footer {
+    background-color: #111;
+    padding: 4rem 2rem 1rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.footer-brand h3 {
+    color: #ffb300;
+    font-size: 2rem;
+    margin: 0 0 0.5rem;
+}
+
+.footer-brand p {
+    opacity: 0.7;
+    margin: 0;
+}
+
+.footer-links h4, .footer-contact h4 {
+    color: #ffb300;
+    margin-bottom: 1rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.3s, color 0.3s;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    color: #ffb300;
+}
+
+.footer-contact p {
+    opacity: 0.7;
+    margin: 0.5rem 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    opacity: 0.6;
+}
+
 @media (max-width: 700px) {
     .fullscreen-hero {
-        min-height: 80vh;
-        padding: 2rem 0 1rem 0;
+        min-height: 100vh;
+        padding: 0.5rem;
     }
+    
+    .brand {
+        font-size: 3.5rem;
+        letter-spacing: 4px;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    
+    .email-collector {
+        width: 95%;
+        padding: 1.5rem 1rem;
+    }
+    
+    .email-collector h3 {
+        font-size: 1.2rem;
+    }
+    
+    #subscription-form {
+        flex-direction: column;
+    }
+    
+    #subscription-form input {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .main-links {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .hero-btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .controls-section {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .search-box, .sort-dropdown {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
     #portfolio {
         grid-template-columns: 1fr;
         padding: 1.2rem 0.5rem;
     }
+    
     .video-thumb {
         height: 150px;
     }
-    .brand {
-        font-size: 4rem;
-        letter-spacing: 4px;
-    }
-    .tagline {
-        font-size: 1.2rem;
-        letter-spacing: 1px;
-    }
+    
     nav ul {
         gap: 0.5rem;
     }

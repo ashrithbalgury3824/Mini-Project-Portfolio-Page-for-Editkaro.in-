@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Editkaro.in - Professional video editing services for gaming, sports, documentary, eCommerce, and more. View our portfolio of high-quality video edits.">
+    <meta name="keywords" content="video editing, social media marketing, gaming videos, football edits, documentary style, anime videos">
     <title>Editkaro.in Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,8 +14,31 @@
             <h1 class="brand">Editkaro.in</h1>
             <p class="tagline">Social Media Marketing & Video Editing Agency</p>
             <div class="scroll-down-indicator">▼</div>
+            
+            <div class="email-collector">
+                <h3>Stay Updated with Our Latest Work</h3>
+                <form id="subscription-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p id="subscription-message"></p>
+            </div>
+            
+            <nav class="main-links">
+                <a href="#main-content" class="hero-btn">Our Work</a>
+                <a href="about.html" class="hero-btn">About Us</a>
+                <a href="contact.html" class="hero-btn">Contact</a>
+            </nav>
         </div>
         <nav id="main-nav" class="hidden-nav">
+            <div class="nav-top">
+                <span class="brand-small">Editkaro.in</span>
+                <div class="page-links">
+                    <a href="index.html" class="active">Portfolio</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
             <ul id="category-nav">
                 <!-- Categories will be injected here -->
             </ul>
@@ -39,6 +64,33 @@
         <span id="close-lightbox">&times;</span>
         <video id="lightbox-video" controls></video>
     </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Editkaro.in</h3>
+                <p>Social Media Marketing & Video Editing Agency</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: info@editkaro.in</p>
+                <p>Phone: +91 76543 21098</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Editkaro.in. All rights reserved.</p>
+        </div>
+    </footer>
+    
     <script src="script.js"></script>
+    <script src="subscription.js"></script>
 </body>
 </html>

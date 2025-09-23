@@ -8,6 +8,20 @@ const videos = [
         thumbnail: "https://res.cloudinary.com/dm9op0ix7/video/upload/so_0,w_400,h_300,c_fill/short1_swrreb.jpg"
     },
     {
+        title: "Long-Form Content",
+        category: "Long-Form Videos",
+        src: "https://res.cloudinary.com/dm9op0ix7/video/upload/q_auto/documentary1_k3pu58.mp4",
+        preview: "https://res.cloudinary.com/dm9op0ix7/video/upload/q_auto,w_600/documentary1-preview_sdku3g.mp4",
+        thumbnail: "https://res.cloudinary.com/dm9op0ix7/video/upload/so_0,w_400,h_300,c_fill/documentary1_k3pu58.jpg"
+    },
+    {
+        title: "Color Grading Showcase",
+        category: "Color Grading",
+        src: "https://res.cloudinary.com/dm9op0ix7/video/upload/q_auto/anime1_budauu.mp4",
+        preview: "https://res.cloudinary.com/dm9op0ix7/video/upload/q_auto,w_600/anime1-preview_gpubop.mp4",
+        thumbnail: "https://res.cloudinary.com/dm9op0ix7/video/upload/so_0,w_400,h_300,c_fill/anime1_budauu.jpg"
+    },
+    {
         title: "Gaming Video 1",
         category: "Gaming Videos",
         src: "https://res.cloudinary.com/dm9op0ix7/video/upload/q_auto/gaming1_bgrdko.mp4",
